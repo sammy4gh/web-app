@@ -10,6 +10,21 @@ public class ShopController {
         public String showHomePage(){
             return "index";
         }
+        @GetMapping("/retail")
+    public String showRetailPage(){
+            return "retail/index";
+        } @GetMapping("/wholesale")
+        public String showWholeSalePage(){
+            return "wholesale/index";
+        } @GetMapping("/auth/login")
+        public String showLoginPage(){
+            return "auth/login";
+        }
+
+        @GetMapping("/auth/signup")
+        public String showSignUpPage(){
+            return "auth/signup";
+        }
  
 
 
